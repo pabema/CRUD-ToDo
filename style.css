@@ -1,0 +1,134 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #F1FAEE;
+}
+
+.title{
+    color: #1D3557;
+}
+
+#name{
+    color: #A8DADC;
+    border: none;
+    background-color: #F1FAEE;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+h3{
+    color: #457B9D;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+H4{
+    color: #457B9D;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+#content{
+    background-color: #F1FAEE;
+    border: 2px solid #1D3557;
+    border-radius: 5px;
+    font-size: 17px;
+    color: #1D3557;
+    padding: 10px;
+    width: 31%;
+    
+}
+
+.submit{
+    background-color: #1D3557;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    color: #F1FAEE;
+    cursor: pointer;
+    font-weight: 600;
+    padding: 13px;
+}
+
+.todo-item{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+span::before {
+    content: '';
+    background: transparent;
+    border: 4px solid #1D3557;
+    border-radius: 25px;
+    display: inline-block;
+    height: 13px;
+    width: 13px;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+
+
+input[type=checkbox]:checked + span::before{
+    content: '';
+    background: #1D3557;
+    border: 2px solid #F1FAEE;
+    outline: 4px solid #1D3557;
+    border-radius: 25px;
+    display: inline-block;
+    height: 9px;
+    width: 9px;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    margin: 4.5px;
+}
+
+.todo-item{
+    margin-top: 15px;
+    align-items: center;
+}
+
+.content{
+    border: none;
+    background-color: #F1FAEE;
+    color: #1D3557;
+    width: 20rem;
+    word-wrap: break-word;
+    box-shadow: 1px 1px 1px .3px;
+    cursor:default;
+    padding: 8px;
+    font-weight: 600;
+}
+
+.edit{
+    background-color: #1D3557;
+    outline: 1px solid transparent;
+    border-radius: 5px;
+    padding: 5px;
+    color: #F1FAEE;
+    cursor: pointer;
+    font-weight: 600;
+    padding: 10px;
+    margin-left: 5px;
+}
+
+.delete{
+    background-color: #961010;
+    outline: 1px solid transparent;
+    border-radius: 5px;
+    padding: 5px;
+    color: #F1FAEE;
+    cursor: pointer;
+    font-weight: 600;
+    padding: 10px;
+}
+
