@@ -41,6 +41,10 @@ H4{
     
 }
 
+*:focus{
+    outline: none;
+}
+
 .submit{
     background-color: #1D3557;
     border: none;
@@ -53,9 +57,15 @@ H4{
 }
 
 .todo-item{
-    width: 40%;
+    width: 100%;
     display: flex;
     justify-content: space-around;
+    margin-top: 15px;
+    align-items: center;
+    background-color: #1D3557;
+    box-shadow: 1px 1px 1px .3px;
+    border-radius: 20px;
+    padding: 5px;
 }
 
 input[type=checkbox] {
@@ -65,7 +75,7 @@ input[type=checkbox] {
 span::before {
     content: '';
     background: transparent;
-    border: 4px solid #1D3557;
+    border: 4px solid #457B9D;
     border-radius: 25px;
     display: inline-block;
     height: 13px;
@@ -79,9 +89,9 @@ span::before {
 
 input[type=checkbox]:checked + span::before{
     content: '';
-    background: #1D3557;
-    border: 2px solid #F1FAEE;
-    outline: 4px solid #1D3557;
+    background: #457B9D;
+    border: 2px solid #1D3557;
+    outline: 4px solid #457B9D;
     border-radius: 25px;
     display: inline-block;
     height: 9px;
@@ -92,25 +102,37 @@ input[type=checkbox]:checked + span::before{
     margin: 4.5px;
 }
 
-.todo-item{
-    margin-top: 15px;
-    align-items: center;
+.todo-list{
+    width: 70%;
+    margin: auto;
+   left: 0;
+   right: 0;
+   top: 0;
+   bottom: 0;
+
 }
 
 .content{
     border: none;
-    background-color: #F1FAEE;
-    color: #1D3557;
-    width: 20rem;
+    background-color: #1D3557;
+    color: #F1FAEE;
+    width: 25rem;
     word-wrap: break-word;
-    box-shadow: 1px 1px 1px .3px;
     cursor:default;
     padding: 8px;
     font-weight: 600;
+    font-size: 20px;
+}
+
+.actions{
+    display: flex;
+    flex-wrap: wrap;
+    width: 12%;
+    justify-content: space-between;
 }
 
 .edit{
-    background-color: #1D3557;
+    background-color: #457B9D;
     outline: 1px solid transparent;
     border-radius: 5px;
     padding: 5px;
